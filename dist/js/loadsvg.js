@@ -1,0 +1,15 @@
+$(function(){
+    $(".logo").load("./assets/svg/fakelogo.svg"); 
+});
+$(function(){
+    $(".connectionphoto").load("./assets/svg/connection.svg"); 
+});
+$(function(){
+    $(".discord").load("./assets/svg/discord.svg"); 
+});
+$(function(){
+    $(".github").load("./assets/svg/github.svg"); 
+});
+$(function(){
+    $(".twitter").load("./assets/svg/twitter.svg"); 
+});

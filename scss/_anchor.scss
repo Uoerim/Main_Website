@@ -1,0 +1,23 @@
+/* unvisited link */
+a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(255, 255, 255);
+    filter: brightness(100%);     
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
