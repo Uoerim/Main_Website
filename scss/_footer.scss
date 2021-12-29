@@ -1,42 +1,47 @@
 .footer{
-    clip-path: ellipse(156% 100% at 38.34% 100%);
-    margin-top: -1.6em;
-    padding: 2em;
-    color: white;
+    background-color: var(--thirdcolor);
+    width: 100vw;
     text-align: center;
-    height: 20vh;
-    background: rgb(0, 0, 0);
+    position: relative;
     h4{
-        filter: brightness(50%);       
-        margin-bottom: 0.5em;
+       color: var(--secondarycolor);
+       text-align: center;
+       margin: 30px 10px 10px;
+       filter: brightness(60%);
     }
     h5{
-        filter: brightness(50%);       
+        color: var(--secondarycolor);
+        text-align: center;
+        filter: brightness(60%);
     }
     ul{
-        display: inline-block;
-        margin: 0 auto;
-    }
-    li{
-        width: 30px;
-        list-style-type: none;
-        float: left;
-        margin: 0.6em;
-        margin-top: 1em;
-
-    }
-    li svg{
-        transition: 0.5s;
-        filter: brightness(50%);       
-        fill: white;
-        &:hover{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        li{
+            transition: 0.3s;
+            filter: brightness(50%);
+            float: right;
+            margin: 10px 10px;
+            margin-bottom: 0px;
+           svg{
+               fill: var(--secondarycolor);
+               width: 35px;
+               
+           }
+           &:hover{
             cursor: pointer;
-            filter: brightness(100%);   
+            filter: brightness(100%);
+        }
         }
     }
     a{
-        filter: brightness(50%);       
-        margin-left: 1em;
-        margin-right: 1em;
+        display: inline-block;
+        color: var(--secondarycolor);
+        text-align: center;
+        margin: 0px 10px 10px;
+        filter: brightness(60%);
+
     }
+
 }

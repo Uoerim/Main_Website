@@ -1,0 +1,40 @@
+.header{
+    color: var(--secondarycolor);
+    z-index: 2;
+    border-bottom: solid 1px var(--secondarycolor);
+    transition: 0.3s;
+    position: fixed;
+    background-color: var(--primarycolor);
+    height: 8vh;
+    width: 100vw;
+    overflow: hidden;
+    .logo{
+        transition: 00.3s;
+        width: 38px;
+        margin: 0;
+        margin-left: 10px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        svg g path{
+            fill: var(--secondarycolor);
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .hamburg{
+        margin: 0;
+        margin-right: 10px;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+       svg{
+           width: 40px;
+           fill: var(--secondarycolor);
+       }
+    } 
+}

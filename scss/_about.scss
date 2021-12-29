@@ -1,43 +1,24 @@
 .about{
+    color: var(--secondarycolor);
     background: url(../assets/jpg/about.jpg);
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
-    background-position: center center; 
+    background-position: center center;   
     width: 100vw;
-    height: 70vh;
-    overflow: hidden;
     h1{
-        font-size: 3em;
-        color: white;
-        margin: 4em 0em 0em 1em;
-        -webkit-filter: drop-shadow( 3px 3px 20px rgba(255, 255, 255, 0.7));
-        filter: drop-shadow( 3px 3px 20px rgba(255, 255, 255, 0.7));
+      font-size: 40px;
+      margin: 43px 0px 0px 30px ;
+      -webkit-filter: drop-shadow( 3px 3px 40px rgb(255, 255, 255));
+      filter: drop-shadow( 3px 3px 40px rgb(255, 255, 255));
     }
-    h6{
-        font-size: 1em;
-        color: white;
-        margin-left: 5em;
-        
+    h2{
+      font-size: 15px;
+      margin: 0px 0px 0px 50px ;
     }
     p{
-        line-height: 32px;   /* within paragraph */
-        text-align: left;
-        width: 45em;
-        font-size: 1.1em;
-        filter: brightness(50%);       
-        color: white;
-        margin-top: 2em;
-        margin-left: 3em;
-    }
-}
+        font-size: 20px;
+        margin: 30px 10px 50px 30px ;
+        filter: brightness(50%);
 
-.curve {
-    position: relative;
-    z-index: 10;
-    display: block;
-    box-sizing: border-box;
-    height: 100px;
-    margin-bottom: -5em;
-    background-color: var(--primarycolor);
-    clip-path: ellipse(225% 100% at -112.15% 0%);
+    }
 }

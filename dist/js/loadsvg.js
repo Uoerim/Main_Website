@@ -1,5 +1,8 @@
 $(function(){
-    $(".logo").load("./assets/svg/fakelogo.svg"); 
+    $(".logo").load("./assets/svg/logo.svg"); 
+});
+$(function(){
+    $(".hamburg").load("./assets/svg/hamburg.svg"); 
 });
 $(function(){
     $(".connectionphoto").load("./assets/svg/connection.svg"); 
@@ -12,4 +15,7 @@ $(function(){
 });
 $(function(){
     $(".twitter").load("./assets/svg/twitter.svg"); 
+});
+$(function(){
+    $(".closeBtn").load("./assets/svg/close.svg"); 
 });
