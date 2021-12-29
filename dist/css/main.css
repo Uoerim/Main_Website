@@ -168,11 +168,11 @@ body.keyboard {
 
 .about {
   color: var(--secondarycolor);
-  background: url(../assets/jpg/about.jpg);
+  background: url(../assets/jpg/about2.jpg);
   background-size: cover;
   /* <------ */
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 600px center;
   width: 100vw;
 }
 
