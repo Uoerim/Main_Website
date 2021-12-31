@@ -92,7 +92,7 @@ $('#about').click(function() {
     $('.about')[0].scrollIntoView();
 });
 $('#lastmenuitem').click(function() {
-    $('.contact')[0].scrollIntoView();
+    $('.aboutthissite')[0].scrollIntoView();
 });
 $('#loginBtn').click(function() {
     window.open('auth','_blank');

@@ -1,22 +1,45 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
-:root{
-    --primarycolor: rgb(29, 29, 29);
-    --secondarycolor: rgb(255, 255, 255);
-    --thirdcolor: rgb(0, 0, 0);
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+:root {
+	--primarycolor: rgb(29, 29, 29);
+	--secondarycolor: rgb(255, 255, 255);
+	--thirdcolor: rgb(0, 0, 0);
 }
 
-*{
-    font-family: 'Comfortaa', cursive;
-    padding: 0;
-    margin: 0;
-    overflow: auto;
-    overflow-x: hidden;
+* {
+	font-family: "Comfortaa", cursive;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	overflow-x: hidden;
+	cursor: none;
 
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
 }
-body{
-    background-color: var(--thirdcolor);
+body {
+	background-color: var(--thirdcolor);
+	cursor: none;
 }
-body.keyboard {
-    height: calc(100% + 500px); /* add padding for keyboard */
+.cursor {
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	z-index: 100;
+	&--large {
+		--size: 40px;
+		border: 1px solid var(--secondarycolor);
+	}
+	&--small {
+		--size: 10px;
+		background: var(--secondarycolor);
+		transform: translate(-50%, -50%);
+	}
 }

@@ -21,7 +21,8 @@
             fill: var(--secondarycolor);
         }
         &:hover{
-            cursor: pointer;
+            border: solid 1px var(--secondarycolor);
+            padding: 5px;
         }
     }
     .hamburg{

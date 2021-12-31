@@ -6,20 +6,50 @@
 }
 
 * {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   padding: 0;
   margin: 0;
   overflow: auto;
   overflow-x: hidden;
+  cursor: none;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 body {
   background-color: var(--thirdcolor);
+  cursor: none;
 }
 
-body.keyboard {
-  height: calc(100% + 500px);
-  /* add padding for keyboard */
+.cursor {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.cursor--large {
+  --size: 40px;
+  border: 1px solid var(--secondarycolor);
+}
+
+.cursor--small {
+  --size: 10px;
+  background: var(--secondarycolor);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .header {
@@ -52,7 +82,8 @@ body.keyboard {
 }
 
 .header .logo:hover {
-  cursor: pointer;
+  border: solid 1px var(--secondarycolor);
+  padding: 5px;
 }
 
 .header .hamburg {
@@ -155,10 +186,6 @@ body.keyboard {
           justify-content: center;
 }
 
-.main button:hover {
-  cursor: pointer;
-}
-
 .main .connectionphoto {
   margin: 100px auto 100px;
   width: 90%;
@@ -195,74 +222,27 @@ body.keyboard {
           filter: brightness(50%);
 }
 
-.contact {
-  height: 40vh;
-  overflow: hidden;
+.aboutthissite {
+  color: var(--secondarycolor);
+  text-align: center;
   border-radius: 1% 99% 0% 100% / 100% 3% 97% 0%;
   background-color: var(--primarycolor);
   width: 100vw;
   border-radius: 100% 0% 100% 0% / 4% 96% 4% 96%;
 }
 
-.contact h2 {
-  color: var(--secondarycolor);
-  text-align: center;
-  margin-top: 50px;
+.aboutthissite h1 {
+  font-size: 40px;
+  margin: 20px 20px;
   -webkit-filter: drop-shadow(3px 3px 40px white);
   filter: drop-shadow(3px 3px 40px white);
 }
 
-.contact form {
-  overflow: hidden;
-  margin: 20px auto;
-  width: 90%;
-}
-
-.contact form * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: var(--secondarycolor);
-  background: transparent;
-  border: solid 1px var(--secondarycolor);
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.contact form *:focus {
-  outline: none;
-}
-
-.contact form input {
-  width: 100%;
-}
-
-.contact form textarea {
-  resize: none;
-  width: 100%;
-  height: 350px;
-}
-
-.contact form #submit {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  margin-bottom: 50px;
-}
-
-.contact form #submit:hover {
-  color: var(--primarycolor);
-  top: -10px;
-  cursor: pointer;
-  background: var(--secondarycolor);
-}
-
-.formcontent {
-  pointer-events: none;
-  position: absolute;
-  width: 100vw;
-}
-
-.formcontent * {
-  pointer-events: auto;
+.aboutthissite p {
+  font-size: 20px;
+  margin: 20px 20px;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .footer {
@@ -399,9 +379,6 @@ a:active {
     padding: 0px;
     padding-right: 15px;
     padding-top: 5px;
-  }
-  .menunav .menuItems a:hover {
-    cursor: pointer;
   }
   .menunav .menuItems a:hover:after {
     -webkit-transform: scaleX(1);

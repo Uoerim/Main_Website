@@ -18,6 +18,8 @@
 </head>
 
 <body>
+    <div class="cursor cursor--large"></div>
+    <div class="cursor cursor--small"></div>
     <style>
     </style>
     <div class="header">
@@ -50,21 +52,10 @@
             more!
         </p>
     </div>
-    <div class="contact" id="contact">
-        <div class="formcontent">
-            <h2>Connect</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" id="name" required placeholder="Your name?">
-                <input type="email" name="email" id="email" required placeholder="your email?">
-                <input type="text" name="message" id="message" required placeholder="Send a message">
-                <input type="submit" value="Send" id="submit">
-            </form>
-        </div>
-    </div>
     <div class="footer">
         <div class="linksfoot">
             <h4>Copyright © 2021 Uoerim</h4>
-            <h5>Other ways to connect</h5>
+            <h5>Various ways to connect</h5>
             <ul>
                 <li class="discord"></li>
                 <li class="github"></li>
@@ -75,9 +66,10 @@
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+<script src="external/cursor.js"></script>
 <script src="external/particles.min.js"></script>
 <script src="external/particlesjs.js"></script>
-<script src="external/particlesjs2.js"></script>
 <script src="js/main.js"></script>
 
 </html>
