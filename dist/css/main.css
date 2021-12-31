@@ -12,11 +12,6 @@
   overflow: auto;
   overflow-x: hidden;
   cursor: none;
-}
-
-body {
-  background-color: var(--thirdcolor);
-  cursor: none;
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -27,6 +22,11 @@ body {
   -ms-user-select: none;
   /* Internet Explorer/Edge */
   user-select: none;
+}
+
+body {
+  background-color: var(--thirdcolor);
+  cursor: none;
 }
 
 .cursor {
