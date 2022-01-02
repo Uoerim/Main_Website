@@ -52,6 +52,12 @@ body {
           transform: translate(-50%, -50%);
 }
 
+@media (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
+
 .header {
   color: var(--secondarycolor);
   z-index: 2;
@@ -314,7 +320,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #7800FF;
+  background: #363636;
 }
 
 /* unvisited link */

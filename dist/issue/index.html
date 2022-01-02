@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="stylesheet" href="../css/issue.css">
+    <title>Report an issue</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <ul>
+                <li class="selected selectable reportbtn">Report issues</li>
+                <li class=" selectable knownbtn">Known issues</li>
+                <li class=" selectable fixedbtn">Fixed issues</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="report visible">
+                <h1>Got an issue?</h1>
+                <form action="#" method="post" id="formissue">
+                    <p>What is it about?</p>
+                    <input type="text" name="issueabout" id="issueabout">
+                    <p>Describe it?</p>
+                    <textarea maxlength="350" name="issuedes" id="issuedes" cols="30" rows="10"></textarea>
+                    <button class="g-recaptcha" data-sitekey="6Ldv_-QdAAAAAGL8emV8ViJDYbC_3H-2dfGmsdUu"
+                        data-callback='onSubmit' data-action='submit'>Submit</button>
+                </form>
+            </div>
+            <div class="known">
+                <h1>Nothing here yet!</h1>
+                <!-- <div class="knownissues issue-1">
+                 <h2>The script doesnt work</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu lorem eget velit accumsan faucibus. Sed et mi et magna mattis consequat quis id urna. Donec vehicula ex eget odio hendrerit viverra. Nullam hendrerit faucibus ligula in tincidunt. Donec bibendum, lectus nec lobortis lobortis, nibh velit ultrices tortor, at blandit felis enim quis mi.</p>
+              </div> -->
+            </div>
+            <div class="fixed">
+                <h1>Nothing here yet!</h1>
+                <!-- <div class="fixedissue fixed-1">
+                 <h2>fixed script</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu lorem eget velit accumsan faucibus. Sed et mi et magna mattis consequat quis id urna. Donec vehicula ex eget odio hendrerit viverra. Nullam hendrerit faucibus ligula in tincidunt. Donec bibendum, lectus nec lobortis lobortis, nibh velit ultrices tortor, at blandit felis enim quis mi.</p>
+              </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function onSubmit(token) {
+        document.getElementById("formissue").submit();
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../js/issue.js"></script>
+
+</html>

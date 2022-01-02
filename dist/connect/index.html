@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Connect</title>
+</head>
+<style>
+    body {
+        background-color: rgb(37, 37, 37);
+        color: white;
+        text-align: center;
+    }
+
+    .discord, .logo {
+        width: 200px;
+        margin: 0 auto;
+        fill: white;
+        border: solid 1px white;
+        padding: 45px;
+        border-radius: 50%;
+    }
+
+    .discord:hover, .logo:hover {
+        background-color: rgb(211, 211, 211);
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <h1>Currently not available please use the discord server to contact me :)</h1>
+    <div class="discord"></div>
+    <h1>Or go back to home page</h1>
+    <div class="logo"></div>
+</body>
+<script>
+    $(function () {
+        $(".discord").load("../assets/svg/discord.svg");
+    });
+    $(function () {
+        $(".logo").load("../assets/svg/logo.svg");
+    });
+    $('.discord').click(function (e) {
+        e.preventDefault();
+        window.open('https://discord.gg/GdxnspKYva', '_blank');
+    });
+    $('.logo').click(function (e) {
+        e.preventDefault();
+        window.open('../', '_blank');
+    });
+</script>
+
+</html>

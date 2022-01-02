@@ -1,0 +1,109 @@
+.main{
+    background: var(--forthcolor);
+    width: 100%;
+    height: 93%;
+    padding: 20px;
+}
+.report{
+    display: none;
+    height: 100%;
+    h1{
+        text-align: center;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    form{
+        text-align: center;
+        p{
+            margin-top: 20px;
+            margin-bottom: 7px;
+          font-size: 20px;
+        }
+        input[type='text']{
+            background: var(--primarycolor);
+            color: var(--secondarycolor);
+            border: solid 1px var(--thirdcolor);
+            margin: 0px 0px 20px;
+            font-size: 20px;
+            height: 40px;
+            width: 80%;
+            padding: 10px;
+        }
+        textarea{
+            background: var(--primarycolor);
+            color: var(--secondarycolor);
+            border: solid 1px var(--thirdcolor);
+            padding: 10px;
+          resize: none;
+          font-size: 20px;
+          width: 80%;
+        }
+        button{
+          height: 70px;
+          display: block;
+          margin: 30px auto ;
+          width: 50%;
+          font-size: 20px;
+          background: transparent;
+          color: var(--secondarycolor);
+          border: solid 1px var(--secondarycolor);
+          &:hover{
+              cursor: pointer;
+              filter: brightness(70%);
+          }
+        }
+    }
+}
+.known{
+    display: none;
+    overflow: auto;
+    height: 100%;
+    h1{
+        text-align: center;
+    }
+    .knownissues{
+        background: var(--thirdcolor);
+        width: 100%;
+        height: 30%;
+        margin-bottom: 20px;
+        padding: 10px;
+        h2{
+        border-bottom: solid 1px white;
+        margin-bottom: 10px;
+        }
+        p{
+
+        }
+    }
+}
+.fixed{
+    display: none;
+    overflow: auto;
+    height: 100%;
+    h1{
+        text-align: center;
+    }
+    .fixedissue{
+        background: var(--thirdcolor);
+        width: 100%;
+        height: 30%;
+        margin-bottom: 20px;
+        padding: 10px;
+        h2{
+        border-bottom: solid 1px white;
+        margin-bottom: 10px;
+        }
+        p{
+
+        }
+    } 
+}
+
+
+.visible{
+    display: inline;
+}
+
+.grecaptcha-badge { 
+    bottom:-130px !important; 
+}

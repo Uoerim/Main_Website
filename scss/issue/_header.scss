@@ -1,0 +1,21 @@
+.header{
+    width: 100%;
+    height: 7%;
+    ul{
+        margin-left: 2px;
+        li{
+            font-size: 20px;
+            float: left;
+            margin: 10px;
+            padding: 5px;
+            list-style: none;
+            &:hover{
+                cursor: pointer;
+                filter: brightness(70%);
+            }
+        }
+    }
+}
+.selected{
+    border-bottom: solid 1px var(--secondarycolor);
+}
