@@ -159,6 +159,16 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 *:focus {
@@ -177,7 +187,7 @@ body {
 }
 
 .content {
-  overflow: hidden;
+  overflow: auto;
   border-radius: 20px;
   background: var(--primarycolor);
   width: 500px;
